@@ -20,27 +20,30 @@ class DetailsPage extends StatelessWidget {
           height: 150,
           width: double.infinity,
           child: Card(
-            elevation: 1,
-            child: Column(
-              children: [
-                Text(
-                  matchList.name,
-                  style: const TextStyle(fontSize: 25),
-                ),
-                Text(
-                  matchList.goal,
-                  style: const TextStyle(
-                      fontSize: 25, fontWeight: FontWeight.bold),
-                ),
-                Text(
-                  'Time: ${matchList.time}',
-                  style: const TextStyle(fontSize: 20),
-                ),
-                Text(
-                  'Total Time: ${matchList.totalTime}',
-                  style: const TextStyle(fontSize: 20),
-                ),
-              ],
+            elevation: 5,
+            child: Padding(
+              padding: const EdgeInsets.all(5.0),
+              child: Column(
+                children: [
+                  Text(
+                    matchList.name,
+                    style: const TextStyle(fontSize: 25),
+                  ),
+                  Text(
+                    matchList.goal,
+                    style: const TextStyle(
+                        fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    'Time: ${matchList.time}',
+                    style: const TextStyle(fontSize: 20),
+                  ),
+                  Text(
+                    'Total Time: ${matchList.totalTime}',
+                    style: const TextStyle(fontSize: 20),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
